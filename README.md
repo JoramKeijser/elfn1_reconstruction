@@ -1,4 +1,4 @@
-# ancestal_elfn1_reconstruction
+# Elfn1 reconstruction
 Computationally reconstruct the amino acid sequence of the Elfn1 protein from the last amniote ancestor. See the following preprint for context:
 [Cortical interneurons: fit for function and fit to function?](https://doi.org/10.1101/2023.02.23.52967), Keijser & Sprekeler 2023. We use the [Topiary package](https://topiary-asr.readthedocs.io/), a very convenient wrapper around software packages that need to be combined for ancestral sequence reconstruction. 
 
