@@ -25,7 +25,7 @@ Download four seed sequences
 bash scripts/download_sequences.sh
 ```
 Use the seed sequences to find Elfn1 homologs, do reciprocal BLAST to call their orthology, lower dataset redundancy, and align the resulting sequences. 
-This will take less than an hour on a laptop. The results will be a folder `seed_to_ali`.  
+This will take less than an hour on a laptop. The results will be a folder `seed_to_ali`. Specifically have a look at the `05_clean-aligned-dataframe.csv` and `06_alignment.fasta` files. The former is the input for the next step, the latter can be viewed in an alignment viewer. 
 ```
 python scripts/create_seed_dataset.py
 ```
