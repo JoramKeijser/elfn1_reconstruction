@@ -25,16 +25,18 @@ Download four seed sequences
 bash scripts/download_sequences.sh
 ```
 Use the seed sequences to find Elfn1 homologs, do reciprocal BLAST to call their orthology, lower dataset redundancy, and align the resulting sequences. 
-This will take less than an hour on a laptop. The results will be a folder `seed_to_ali`. Specifically have a look at the `05_clean-aligned-dataframe.csv` and `06_alignment.fasta` files. The former is the input for the next step, the latter can be viewed in an alignment viewer. 
+This will take less than an hour on a laptop.
 ```
 python scripts/create_seed_dataset.py
 ```
+The results of this step will be in a folder called `seed_to_ali`. Specifically have a look at the `05_clean-aligned-dataframe.csv` and `06_alignment.fasta` files. The former is the input for the next step, the latter can be viewed in an alignment viewer. 
 
 ## Infer ancestral sequences
-Use the aligned sequences (in `seed_to_ali/05_clean-aligned-dataframe.csv`) to infer the ancestral proteins. This is a computationally heavy step that I ran on a computing cluster with the following SLURM script. The result will be in a folder called `ali_to_anc`
+Use the aligned sequences to infer the ancestral proteins. This is a computationally heavy step that I ran on a computing cluster with the following SLURM script. 
 ```
 sbatch scripts/alignment_to_ancestors.sh 
 ```
+The result will be in a folder called `ali_to_anc`. 
 
 ## Determine branch support
 The previous step used bootstrapping to get confidence estimates for the ancestral sequences. In a final step, we determine the confidence in the evolutionary tree on which these sequences are placed. 
