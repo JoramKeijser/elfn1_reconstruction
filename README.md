@@ -36,12 +36,14 @@ Use the aligned sequences to infer the ancestral proteins. This is a computation
 ```
 sbatch scripts/alignment_to_ancestors.sh 
 ```
-The result will be in a folder called `ali_to_anc`. 
+The result will be in a folder called `ali_to_anc/results`. 
 
 ## Determine branch support
-The previous step used bootstrapping to get confidence estimates for the ancestral sequences. In a final step, we determine the confidence in the evolutionary tree on which these sequences are placed. 
+The previous step used bootstrapping to get confidence estimates for the ancestral sequences. In a final step, we determine the confidence in the evolutionary tree on which these sequences are placed. The following SLURM script parallelizes the computation, such that it takes hours instead of days. 
 ```
 sbatch scripts/bootstrap_reconcile.sh 
 ```
+The result will be added to `ali_to_anc/results`. 
+
 
 
