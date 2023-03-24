@@ -36,7 +36,7 @@ Use the aligned sequences to infer the ancestral proteins. This is a computation
 ```
 sbatch scripts/alignment_to_ancestors.sh 
 ```
-You can also run this step locally since it cannot be parallelized across multiple machines (nodes) anyway:
+You can also run this step locally since it cannot be parallelized across multiple machines anyway:
 ```
 topiary-alignment-to-ancestors seed_to_ali/05_clean-aligned-dataframe.csv --out_dir ali_to_anc 
 ```
