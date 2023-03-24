@@ -6,11 +6,11 @@ Computationally reconstruct the Elfn1 protein from the last amniote ancestor. Se
 
 Clone this repository:
 ```
-git clone github.com/JoramKeijser/ancestal_elfn1_reconstruction/
+git clone github.com/JoramKeijser/elfn1_reconstruction/
 ```
 Recreate the conda environment to install the required Python and R packages/libraries. 
 ```
-cd ancestal_elfn1_reconstruction/
+cd elfn1_reconstruction/
 conda env create --name topiary --file environment.yml
 conda activate topiary
 ```
