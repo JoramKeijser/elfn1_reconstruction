@@ -17,4 +17,8 @@ conda activate topiary
 export https_proxy=http://frontend01:3128/
 export http_proxy=http://frontend01:3128/ 
 
+<<<<<<< HEAD
+topiary-alignment-to-ancestors /results/seed_to_ali/05_clean-aligned-dataframe.csv --out_dir /results/ali_to_anc
+=======
 topiary-alignment-to-ancestors seed_to_ali/05_clean-aligned-dataframe.csv --out_dir ali_to_anc
+>>>>>>> fccd80c18f9df983a1a8596424c81468e0a95dcf
