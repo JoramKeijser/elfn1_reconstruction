@@ -1,6 +1,6 @@
 # Elfn1 reconstruction
 Computationally reconstruct the Elfn1 protein from the last amniote ancestor. See the following preprint for context:
-[Cortical interneurons: fit for function and fit to function?](https://doi.org/10.1101/2023.02.23.52967), Keijser & Sprekeler 2023. We use the [Topiary package](https://topiary-asr.readthedocs.io/), a very convenient wrapper around software packages that need to be combined for ancestral sequence reconstruction. 
+[Cortical interneurons: fit for function and fit to function?](https://doi.org/10.1101/2023.02.23.52967), Keijser & Sprekeler 2023. 
 
 ## Installation
 
@@ -49,5 +49,6 @@ sbatch scripts/bootstrap_reconcile.sh
 ```
 The run time will depend on the parallelization scheme and the number of bootstrap replicates. Doing 600 replicates on 35 nodes took ca. 8 hours. The result will be added to `ali_to_anc/results`. 
 
+## Acknowledgements 
 
-
+We are grateful to the developers of the [Topiary package](https://topiary-asr.readthedocs.io/), a very convenient wrapper around different software packages that together make up the reconstruction pipeline. Also see the [Topiary paper](https://doi.org/10.1002/pro.4551). 
