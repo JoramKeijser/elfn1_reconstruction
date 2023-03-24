@@ -32,7 +32,7 @@ python scripts/create_seed_dataset.py
 The results of this step will be in a folder called `seed_to_ali`. Specifically have a look at the `05_clean-aligned-dataframe.csv` and `06_alignment.fasta` files. The former is the input for the next step, the latter can be viewed in an alignment viewer. 
 
 ## Infer ancestral sequences
-Use the aligned sequences to infer the ancestral proteins. This is a computationally heavy step that I ran on a computing cluster with the following SLURM script: 
+Use the aligned sequences to infer the ancestral proteins. This is a computationally heavy step because it relies on bootstrapping. I ran the following SLURM batch script on a computing cluster: 
 ```
 sbatch scripts/alignment_to_ancestors.sh 
 ```
@@ -43,7 +43,7 @@ topiary-alignment-to-ancestors seed_to_ali/05_clean-aligned-dataframe.csv --out_
 The run time will depend on the number of cores and the (automatically determined) number of bootstrap replicates. Doing 600 replicates on 8 cores takes ca. 14 hours. The results will be in the `ali_to_anc/results` folder. 
 
 ## Determine branch support
-The previous step estimated our confidence in the ancestral sequences. Finally, we determine - among other things - our confidence in the evolutionary tree on which the reconstructed sequences are placed. The following SLURM script parallelizes the computation:
+The previous step estimated our confidence in the ancestral sequences. Finally, we determine our confidence in the evolutionary tree on which the reconstructed sequences are placed. This is again done using the bootstrap. The following SLURM script parallelizes the computation:
 ```
 sbatch scripts/bootstrap_reconcile.sh 
 ```
