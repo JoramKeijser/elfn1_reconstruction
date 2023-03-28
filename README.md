@@ -1,6 +1,6 @@
 # Elfn1 reconstruction
 Computationally reconstruct the Elfn1 protein from the last amniote ancestor. See the preprint for context:
-[Cortical interneurons: fit for function and fit to function?](https://doi.org/10.1101/2023.02.23.529671). See the [interneuron_evolution repo](https://github.com/JoramKeijser/interneuron_evolution/) for the transcriptomic analyses. 
+[Cortical interneurons: fit for function and fit to function?](https://doi.org/10.1101/2023.02.23.529671). See the [interneuron_evolution repo](https://github.com/JoramKeijser/interneuron_evolution/) for the transcriptomic analyses from the paper. 
 
 ![figure1](./figures/fig9_small.png)
 
