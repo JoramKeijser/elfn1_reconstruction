@@ -26,7 +26,6 @@ The code is organized into the following folders:
 - `src` contains the code that is shared by several scripts
 - `figures` contains the figures shown in the manuscript. 
 - `results` contains the files necessary to analyse the results and reproduce Figure 9 from the manuscript. In particular:
-   - `species-tree.newick`: Species tree.
    - `extant_dataframe.csv`: sequences of extant species used to reconstruct ancestors. 
    - `anc54.fasta`: most likely (ML) and second most likely (altAll) Elfn1 sequence of the last common amniote ancestor. 
    - `anc54.csv`: per-site statistics (e.g. posterior probability) of reconstructed sequence.
