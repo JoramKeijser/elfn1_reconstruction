@@ -2,6 +2,9 @@
 Computationally reconstruct the Elfn1 protein from the last amniote ancestor. See the preprint for context:
 [Cortical interneurons: fit for function and fit to function?](https://doi.org/10.1101/2023.02.23.52967). See the [interneuron_evolution repo](https://github.com/JoramKeijser/interneuron_evolution/) for the transcriptomic analyses. 
 
+![figure1](./figures/fig9_small.png)
+
+
 ## Installation
 
 Clone this repository:
