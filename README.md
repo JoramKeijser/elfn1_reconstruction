@@ -30,7 +30,7 @@ The code is organized into the following folders:
    - `extant_dataframe.csv`: sequences of extant species used to reconstruct ancestors. 
    - `anc54.fasta`: most likely (ML) and second most likely (altAll) Elfn1 sequence of the last common amniote ancestor. 
    - `anc54.csv`: per-site statistics (e.g. posterior probability) of reconstructed sequence.
-   - `ancestors54_and_extant.fasta`: multiple sequence alignmet of ML ancestor and key extant species (mouse, human, finch, turtle).
+   - `ancestors54_and_extant.fasta`: multiple sequence alignment of ML ancestor and key extant species (mouse, human, finch, turtle).
 
 ## Download data
 Download four seed sequences 
@@ -64,4 +64,4 @@ The run time will depend on the parallelization scheme and the number of bootstr
 
 ## Acknowledgements 
 
-We are grateful to the developers of the [Topiary package](https://topiary-asr.readthedocs.io/), a very convenient wrapper around different software packages that together make up the reconstruction pipeline. Also see the [Topiary paper](https://doi.org/10.1002/pro.4551). 
+We are grateful to the developers of the [Topiary package](https://topiary-asr.readthedocs.io/), a very convenient wrapper around different software packages that together make up the reconstruction pipeline. This repository would not have existed without it. Also see the [Topiary paper](https://doi.org/10.1002/pro.4551). 
